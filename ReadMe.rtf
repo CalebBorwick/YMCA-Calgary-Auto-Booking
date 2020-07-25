@@ -1,0 +1,106 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red6\green33\blue79;
+\red25\green25\blue25;\red234\green234\blue234;\red25\green25\blue25;\red234\green234\blue234;\red0\green0\blue0;
+\red230\green230\blue230;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c1176\c18431\c38431;
+\cssrgb\c12941\c12941\c12941;\cssrgb\c93333\c93333\c93333;\cssrgb\c12941\c12941\c12941;\cssrgb\c93333\c93333\c93333;\csgray\c0\c0;
+\csgray\c92143;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Read Me\
+\
+Instructions: \
+\
+	Enter Location options under variable loc:\
+		\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Brookfield\
+		Gray\
+		Melcor\
+		Remington\
+		Saddletowne\
+		Shane\
+		Shawnessy\
+		South Health\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 	Enter first name under variable fname\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	Enter last name under variable lname\
+\
+	Enter date of birth day under variable dobD\
+\
+	Enter date of birth year under variable dobY\
+\
+	Enter date of birth month options under variable dobM\
+		Jan\
+		Feb\
+		Mar\
+		Apr\
+		May\
+		Jun\
+		Jul\
+		Aug\
+		Sep\
+		Oct\
+		Nov\
+		Dec\
+\
+	Enter email address under variable email\
+\
+	Enter phone number under variable phone\
+\
+	Save script with as a python file (fileName.py)\
+\
+Automation Process\
+	\
+For PC\
+	1. Create a batch file to to run on the python script\
+\
+		i) Open a text/notepad file then apply instructions \
+			\cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 "Path where your Python exe is stored\\python.exe" "Path where your Python script is 			stored\\script name.py" pause\
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+		ii) Save the file with the extension .bat (fileName.bat)\
+\
+	2. Schedule the script with Windows Scheduler \
+		\
+		i) Open administrative tools\
+		ii) Double click task scheduler and choose \'91Create Basic Task\'92\
+		iii) Name the Task, select the time frame you would like the to perform (ie daily at 6am)\
+		iv) Select the action function and select start a program \
+		v) Use the browse function or paste the path where your bat file is located \
+		vi) select finish \
+\
+For Mac \
+	1. Create an Executable file\
+		i) Save the file with no file extension from ide to convert into a Unix executable or \
+			- open a text editor and type \
+				 \cf7 \cb8 \expnd0\expndtw0\kerning0
+Python \'93Path where your Python exe is stored.py\'94 fileName\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\cb9 			- make sure there is no file extension specified \
+			- Open terminal and type \
+				\cb10 chmod 755 \'93path where your document is saved\'94\cb9 \
+			- this will save it as a unix executable\
+		ii) Open the application automator \
+		iii) Select application \
+		iv) Under the actions box search \'93Get specific finder item\'94 and double click it\
+		v) Click the add button and select your Unix executable \
+		vi) Save your file with a .app extension \
+\
+	2.  Create a Custom calendar event to schedule run time\
+		i) Open Calendar and create a new event with the time you want the script to run \
+		ii) Add an alert and select custom \
+		iii) Under message with sound select Open file\
+		iv) Under Calendar select Other and find your application within finder \
+		v) Select At time of event and select ok\
+		vi) Finally select repeat daily and save the calendar event \cb1 \
+	\
+\
+\
+\
+\
+\
+}
