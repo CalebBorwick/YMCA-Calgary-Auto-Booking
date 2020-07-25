@@ -178,7 +178,7 @@ def bookTime():
     pyautogui.moveTo(500,780,0.5)
     timeSlot()
     pyautogui.moveTo(500,730,0.5)
-    #pyautogui.click()
+    pyautogui.click()
 
 
 
